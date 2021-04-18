@@ -1,0 +1,15 @@
+<div class="allpage">
+    <h1>{{drone.name}}</h1>
+<div class="drone-list details">
+    <h4>Propellers : {{drone.propellers}}</h4>
+    <h4>Max Speed : {{drone.maxSpeed}} </h4>
+</div>
+<div class="myBtns">
+<form action="/drones/{{drone._id}}/edit" method="GET">
+<button  class="btn btn-outline-dark">Edit</button>
+</form>
+<form action="/drones/{{drone._id}}/delete" method="POST">
+<button class="btn btn-outline-dark" >Delete</button>
+</form>
+</div>
+</div>

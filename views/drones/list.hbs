@@ -1,1 +1,9 @@
-<h2>Available drones</h2>
+<div class="allpage">
+    <h2>Available drones</h2>
+<div class="drone-list ">
+    
+{{#each drones}}
+<a href="/drones/{{this._id}}"><p> {{this.name}}</p></a>
+{{/each}}
+</div>
+</div>
